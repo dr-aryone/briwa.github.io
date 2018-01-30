@@ -13,6 +13,7 @@
   "author": "Briwa <shabriwa.shalat@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bulma": "0.6.2",
     "cross-env": "5.1.2",
     "react": "16.2.0",
     "react-dom": "16.2.0",

@@ -1,10 +1,20 @@
+/* eslint-disable max-len */
 import React from 'react';
 
 const App = () => {
   return (
-    <div>
-      <h2>Hello World</h2>
-    </div>
+    <section className="hero">
+      <div className="hero-body">
+        <div className="container">
+          <h1 className="title">
+            Hello!
+          </h1>
+          <h2 className="subtitle">
+            I&apos;m Briwa.
+          </h2>
+        </div>
+      </div>
+    </section>
   );
 };
 
