@@ -3,7 +3,7 @@ const { resolve } = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'inline-source-map',
 
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
@@ -39,11 +39,16 @@ const config = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            'css-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true,
+              },
+            },
             {
               loader: 'sass-loader',
-              query: {
-                sourceMap: false,
+              options: {
+                sourceMap: true,
               },
             },
           ],

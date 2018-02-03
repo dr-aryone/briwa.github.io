@@ -29,14 +29,19 @@ class App extends React.Component {
                     </div>
                   </div>
                   <div className="nav-center">
-                    <a className="nav-item" href="https://twitter.com/iwakuya">
+                    <a className="nav-item" href="https://twitter.com/ssbriwa">
                       <span className="icon">
-                        <i className="fa fa-twitter" />
+                        <i className="fa fa-lg fa-twitter" />
                       </span>
                     </a>
                     <a className="nav-item" href="https://github.com/briwa">
                       <span className="icon">
-                        <i className="fa fa-github" />
+                        <i className="fa fa-lg fa-github" />
+                      </span>
+                    </a>
+                    <a className="nav-item" href="https://instagram.com/ssbriwa">
+                      <span className="icon">
+                        <i className="fa fa-lg fa-instagram" />
                       </span>
                     </a>
                   </div>
