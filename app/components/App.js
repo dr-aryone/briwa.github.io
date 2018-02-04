@@ -24,30 +24,32 @@ class App extends React.Component {
                 <div className="block-wrapper">
                   <div className="block-header">
                     <div className="block-titles">
-                      <h4 className="title is-4">Hello!</h4>
-                      <h5 className="subtitle is-5">I&apos;m Briwa. { this.state.age } y/o web developer.</h5>
+                      <h1 className="title">Hello!</h1>
+                      <h2 className="subtitle">I&apos;m Briwa. { this.state.age } y/o web developer.</h2>
                     </div>
-                  </div>
-                  <div className="block-nav nav-center">
-                    <a className="nav-item" href="https://twitter.com/ssbriwa">
-                      <span className="icon">
-                        <i className="fa fa-lg fa-twitter" />
-                      </span>
-                    </a>
-                    <a className="nav-item" href="https://github.com/briwa">
-                      <span className="icon">
-                        <i className="fa fa-lg fa-github" />
-                      </span>
-                    </a>
-                    <a className="nav-item" href="https://instagram.com/ssbriwa">
-                      <span className="icon">
-                        <i className="fa fa-lg fa-instagram" />
-                      </span>
-                    </a>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="block-footer">
+          <div className="nav-center">
+            <a className="nav-item" href="https://twitter.com/ssbriwa">
+              <span className="icon">
+                <i className="fa fa-lg fa-twitter" />
+              </span>
+            </a>
+            <a className="nav-item" href="https://github.com/briwa">
+              <span className="icon">
+                <i className="fa fa-lg fa-github" />
+              </span>
+            </a>
+            <a className="nav-item" href="https://instagram.com/ssbriwa">
+              <span className="icon">
+                <i className="fa fa-lg fa-instagram" />
+              </span>
+            </a>
           </div>
         </div>
       </section>

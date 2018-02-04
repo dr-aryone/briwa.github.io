@@ -2,12 +2,97 @@ body {
   background-color: $white-ter;
 }
 
-.block-nav {
-  padding-top: 16px;
+/* loading */
+
+#app:not(:empty) + .loading-cont {
+  display: none;
 }
 
-.nav-item {
-  color: $grey;
-  font-size: $size-5;
-  margin: 0px 8px;
+.loading-cont {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $white-ter;
+}
+
+.loading-cube-grid {
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  .loading-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #333;
+    float: left;
+    animation: cubeGridScaleDelay 1.3s infinite ease-in-out;
+  }
+
+  .loading-cube1 {
+    animation-delay: 0.2s;
+  }
+
+  .loading-cube2 {
+    animation-delay: 0.3s;
+  }
+
+  .loading-cube3 {
+    animation-delay: 0.4s;
+  }
+
+  .loading-cube4 {
+    animation-delay: 0.1s;
+  }
+
+  .loading-cube5 {
+    animation-delay: 0.2s;
+  }
+
+  .loading-cube6 {
+    animation-delay: 0.3s;
+  }
+
+  .loading-cube7 {
+    animation-delay: 0s;
+  }
+
+  .loading-cube8 {
+    animation-delay: 0.1s;
+  }
+
+  .loading-cube9 {
+    animation-delay: 0.2s;
+  }
+}
+
+@keyframes cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+/* navigation */
+
+.block-footer {
+  margin: 16px 0px;
+
+  .nav-center {
+    text-align: center;
+
+    .nav-item {
+      color: $grey;
+      font-size: $size-5;
+      margin: 0px 8px;
+    }
+  }
 }
