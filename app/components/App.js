@@ -28,7 +28,7 @@ class App extends React.Component {
                       <h5 className="subtitle is-5">I&apos;m Briwa. { this.state.age } y/o web developer.</h5>
                     </div>
                   </div>
-                  <div className="nav-center">
+                  <div className="block-nav nav-center">
                     <a className="nav-item" href="https://twitter.com/ssbriwa">
                       <span className="icon">
                         <i className="fa fa-lg fa-twitter" />
