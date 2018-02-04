@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { differenceInYears } from 'date-fns';
 
 class App extends React.Component {
@@ -34,7 +35,7 @@ class App extends React.Component {
           </div>
         </div>
         <div className="block-footer">
-          <div className="nav-center">
+          <div className="social-media-cont has-text-centered">
             <a className="nav-item" href="https://twitter.com/ssbriwa">
               <span className="icon">
                 <i className="fa fa-lg fa-twitter" />
@@ -51,6 +52,9 @@ class App extends React.Component {
               </span>
             </a>
           </div>
+          <footer className="has-text-centered is-size-7">
+            <span>ⓒ 2018 briwa.github.io. <Link to="/credits">credits</Link></span>
+          </footer>
         </div>
       </section>
     );
