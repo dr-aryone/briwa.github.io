@@ -6,11 +6,15 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
   entry: [
-    './main.js',
+    './main.tsx',
     './assets/scss/main.scss',
   ],
 
   context: resolve(__dirname, 'app'),
+
+  resolve: {
+    extensions: ['.js', '.ts', '.tsx'],
+  },
 
   output: {
     filename: 'bundle.js',
@@ -35,14 +39,17 @@ const config = {
     loaders: [
       {
         enforce: 'pre',
-        test: /\.jsx?$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
-        loader: 'eslint-loader',
+        loader: 'tslint-loader',
+        options: {
+          emitErrors: true,
+        },
       },
       {
-        test: /\.jsx?$/,
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader',
         exclude: /node_modules/,
-        loader: 'babel-loader',
       },
       {
         test: /\.scss$/,

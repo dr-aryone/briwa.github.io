@@ -1,21 +1,21 @@
 /* eslint-disable max-len */
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { differenceInYears } from 'date-fns';
+import { differenceInYears } from "date-fns";
+import * as React from "react";
+import { Link } from "react-router-dom";
 
 class App extends React.Component {
-  constructor(props) {
+  private age: number;
+
+  constructor(props: any) {
     super(props);
 
-    this.state = {
-      age: differenceInYears(
-        new Date(),
-        new Date(1990, 11, 19),
-      ),
-    };
+    this.age = differenceInYears(
+      new Date(),
+      new Date(1990, 11, 19),
+    );
   }
 
-  render() {
+  public render() {
     return (
       <section className="hero is-fullheight">
         <div className="hero-body">
@@ -26,7 +26,7 @@ class App extends React.Component {
                   <div className="block-header">
                     <div className="block-titles">
                       <h1 className="title">Hello!</h1>
-                      <h2 className="subtitle">I&apos;m <a className="nav-item" href="https://github.com/briwa">Briwa</a>. { this.state.age } y/o frontend developer.</h2>
+                      <h2 className="subtitle">I&apos;m <a className="nav-item" href="https://github.com/briwa">Briwa</a>. {this.age} y/o frontend developer.</h2>
                     </div>
                   </div>
                 </div>

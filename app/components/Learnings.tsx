@@ -1,25 +1,27 @@
 /* eslint-disable max-len */
-import React from 'react';
-import { Link } from 'react-router-dom';
+import * as React from "react";
+import { Link } from "react-router-dom";
 
-const Library = ({ name, githubName, desc }) => {
+interface ILibraryProps { name: string; githubName: string; desc: string; }
+
+const Library = (props: ILibraryProps) => {
   return (
     <div className="column">
       <div className="content">
         <p>
-          <strong>{ name }</strong><br />
+          <strong>{props.name}</strong><br />
           <i className="fa fa-github" />&nbsp;
           <small>
-            <a href={`https://github.com/${githubName}`} target="_blank" rel="noopener noreferrer">{githubName}</a>
+            <a href={`https://github.com/${props.githubName}`} target="_blank" rel="noopener noreferrer">{props.githubName}</a>
           </small><br />
-          {desc}
+          {props.desc}
         </p>
       </div>
     </div>
   );
 };
 
-const Credits = () => {
+const Learnings = () => {
   return (
     <section className="hero is-fullheight">
       <div className="hero-body">
@@ -43,7 +45,7 @@ const Credits = () => {
             <Library name="Font Awesome" githubName="FortAwesome/Font-Awesome" desc="Font icons." />
             <Library name="date-fns" githubName="date-fns/date-fns" desc="Date utilities." />
           </div>
-          <span className="is-block has-text-centered is-size-7">Bundled with <a href="https://github.com/webpack/webpack" target="_blank" rel="noopener noreferrer">webpack</a> + <a href="https://github.com/babel/babel" target="_blank" rel="noopener noreferrer">babel</a>. Linted with <a href="https://github.com/eslint/eslint" target="_blank" rel="noopener noreferrer">ESLint</a>.</span>
+          <span className="is-block has-text-centered is-size-7">Written in <a href="https://github.com/Microsoft/TypeScript" target="_blank" rel="noopener noreferrer">Typescript</a>. Bundled with <a href="https://github.com/webpack/webpack" target="_blank" rel="noopener noreferrer">webpack</a>. Linted with <a href="https://github.com/palantir/tslint" target="_blank" rel="noopener noreferrer">TSLint</a>.</span>
         </div>
       </div>
       <div className="block-footer">
@@ -55,4 +57,4 @@ const Credits = () => {
   );
 };
 
-export default Credits;
+export default Learnings;

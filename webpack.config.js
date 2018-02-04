@@ -7,7 +7,7 @@ const config = {
 
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
-    './main.js',
+    './main.tsx',
     './assets/scss/main.scss',
   ],
 
@@ -19,6 +19,10 @@ const config = {
 
   context: resolve(__dirname, 'app'),
 
+  resolve: {
+    extensions: ['.js', '.ts', '.tsx'],
+  },
+
   devServer: {
     contentBase: resolve(__dirname, 'app/html'),
     publicPath: '/',
@@ -28,15 +32,16 @@ const config = {
     rules: [
       {
         enforce: 'pre',
-        test: /\.jsx?$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
-        loader: 'eslint-loader',
+        loader: 'tslint-loader',
+        options: {
+          emitErrors: true,
+        },
       },
       {
-        test: /\.jsx?$/,
-        loaders: [
-          'babel-loader',
-        ],
+        test: /\.tsx?$/,
+        loaders: 'awesome-typescript-loader',
         exclude: /node_modules/,
       },
       {
