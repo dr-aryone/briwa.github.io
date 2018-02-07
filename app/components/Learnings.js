@@ -29,7 +29,7 @@ const Credits = () => {
               <div className="block-wrapper">
                 <div className="block-header">
                   <div className="block-titles">
-                    <h2 className="is-size-3"><Link to="/">/</Link> what I learned</h2>
+                    <h2 className="is-size-3">what I learned</h2>
                     <h2 className="is-size-6">throughout this project:</h2>
                   </div>
                 </div>
@@ -65,7 +65,7 @@ const Credits = () => {
           </a>
         </div>
         <footer className="has-text-centered is-size-7">
-          <span>ⓒ 2018 briwa.github.io.</span>
+          <span>ⓒ 2018 briwa.github.io. <Link to="/">back to home</Link></span>
         </footer>
       </div>
     </section>
