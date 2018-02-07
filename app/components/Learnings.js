@@ -29,8 +29,8 @@ const Credits = () => {
               <div className="block-wrapper">
                 <div className="block-header">
                   <div className="block-titles">
-                    <h2 className="is-size-3"><Link to="/">/</Link> credits</h2>
-                    <h2 className="is-size-6">Tools used for this project:</h2>
+                    <h2 className="is-size-3"><Link to="/">/</Link> what I learned</h2>
+                    <h2 className="is-size-6">throughout this project:</h2>
                   </div>
                 </div>
               </div>

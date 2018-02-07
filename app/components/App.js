@@ -53,7 +53,7 @@ class App extends React.Component {
             </a>
           </div>
           <footer className="has-text-centered is-size-7">
-            <span>ⓒ 2018 briwa.github.io. <Link to="/credits">credits</Link></span>
+            <span>ⓒ 2018 briwa.github.io. <Link to="/learnings">what I learned</Link></span>
           </footer>
         </div>
       </section>
