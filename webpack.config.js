@@ -20,7 +20,7 @@ const config = {
   context: resolve(__dirname, 'app'),
 
   devServer: {
-    contentBase: resolve(__dirname, 'build'),
+    contentBase: resolve(__dirname, 'app/html'),
     publicPath: '/',
   },
 
