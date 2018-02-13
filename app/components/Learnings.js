@@ -47,23 +47,6 @@ const Credits = () => {
         </div>
       </div>
       <div className="block-footer">
-        <div className="social-media-cont has-text-centered">
-          <a className="nav-item" href="https://twitter.com/ssbriwa">
-            <span className="icon">
-              <i className="fa fa-lg fa-twitter" />
-            </span>
-          </a>
-          <a className="nav-item" href="https://github.com/briwa">
-            <span className="icon">
-              <i className="fa fa-lg fa-github" />
-            </span>
-          </a>
-          <a className="nav-item" href="https://instagram.com/ssbriwa">
-            <span className="icon">
-              <i className="fa fa-lg fa-instagram" />
-            </span>
-          </a>
-        </div>
         <footer className="has-text-centered is-size-7">
           <span>ⓒ 2018 briwa.github.io. <Link to="/">back to home</Link></span>
         </footer>
